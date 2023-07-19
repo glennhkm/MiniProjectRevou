@@ -1,3 +1,4 @@
+//membuat fungsi perhitungan
 function hasilperhitungan(){   
     var beratbadan = parseFloat(document.getElementById("bb").value);
     var tinggibadan = parseFloat(document.getElementById("tb").value/100);
