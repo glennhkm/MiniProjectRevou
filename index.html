@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kalkulator BMI</h1>
+    <div class="bagianawal">
+        <p class="penjelasan">
+        Berat badan ideal impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang 
+        penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
+        Yuk, hitung sekarang di kalkulator BMI. 
+        </p>
+    
+
+            <!-- <p class="jeniskelamin">
+                <label>Jenis Kelamin</label>
+                <br>
+                <label><input type="checkbox" name="lakiLaki" value="lakiLaki">Laki-laki</label>
+                <label><input type="checkbox" name="perempuan" value="perempuan">Perempuan</label>
+            </p> -->
+        <div class="kalkulator">
+
+            <p class="beratbadan">
+                <label><b>Berat Badan (Kg)</b></label>
+                <br>
+                <input type="number" id="bb">
+            </p>
+            
+            <!-- <p class="usia">
+                <label><b>Usia (tahun)</b></label>
+                <br>
+                <input type="number" id="usia">
+            </p> -->
+            
+            <p class="tinggibadan">
+                <label><b>Tinggi Badan (Cm)</b></label>
+                <br>
+                <input type="number" id="tb">
+            </p>
+            <!-- <input type="submit" name="hitung" value="Hitung BMI" onclick="hasilperhitungan()"> -->
+            <button class="tombol" onclick="hasilperhitungan()">Hasil BMI</button>
+            <!-- <button>Reset</button> -->
+        </div>
+            
+        <p class="penjelasan"> Keunggulan fitur
+            <ol type="1">
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+            </ol>
+        </p>
+            
+        <p class="penjelasan">
+            Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+        </p>
+            
+        <p class="penjelasan">
+            Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh atau BMI dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/m<sup>2</sup>
+        </p>
+            
+    </div>
+            
+    
+    <div class="bagianhasil">
+        <div class="formhasil">
+            <h3 id="tulisanhasil"></h3>
+            
+            <!-- <p>Berat Badan Lebih</p> -->
+            <!-- <p>Anda memiliki berat badan berlebih</p> -->
+            <div id="hasilangka"></div>
+            <div id="hasilpenjelasan"></div>
+        </div>
+        <!-- <input type="submit" value="Download Hasil BMI"> -->
+        <!-- <p>Hasil BMI diantara </p> -->
+        <p class="penjelasan" id="penjelasanakhir"></p>
+    </div>
+    
+    <footer>
+        <p>Download Aplikasi</p>
+        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjar7PQq5qAAxU5IoMDHcSsBLkYABAAGgJzZg&ohost=www.google.com&cid=CAESbeD2FFNNSRPN3icsyoneMCVsgm7JAaM4j60hRzOEm-uuaGssAD3ZmfkYQKWXjcebaXkAK2jIlVlRgKZk0FEIzDrKADir5UP39zy7w-hGGrw4GUOQ5bao6WOjaPvAjEQYd3o7v8oVB85YLscTQmM&sig=AOD64_1wqOHIVXc4lSgnRlNamz4pmvxRcg&q&adurl&ved=2ahUKEwiX_KzQq5qAAxW4d2wGHdy4DVQQ0Qx6BAgGEAE"><img src="C:\Users\62822\Downloads\logo\appstoree.png" alt="appstorelogo"></a>
+        <a href="https://www.apple.com/id/app-store/"><img src="C:\Users\62822\Downloads\logo\playstore.png" alt="playstorelogo"></a>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
