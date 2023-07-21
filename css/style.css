@@ -3,13 +3,10 @@ h1{
 }
 
 .bagianawal{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 10px;
-    float: left;
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 50%;
+    margin: auto;
     border:5px solid gray;
 }
 
@@ -37,15 +34,12 @@ h1{
 }
 
 .bagianhasil{
-    float: right;
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 50%;
     border:5px solid gray;
-    margin-right: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    
+    margin: auto;
+    margin-top: 15px;
 }
 
 .formhasil{
@@ -60,6 +54,8 @@ img{
 .penjelasan{
     text-align: justify;
 }
+
+
 
 footer{
     font-size: 25px;

@@ -1,9 +1,30 @@
 //membuat fungsi perhitungan
 function hasilperhitungan(){   
+    var jeniskelamin = document.querySelector('input[name="gender"]:checked');
+    var usia = parseFloat(document.getElementById("usia").value);
     var beratbadan = parseFloat(document.getElementById("bb").value);
     var tinggibadan = parseFloat(document.getElementById("tb").value/100);
+
+    //membuat validasi
+    if (!jeniskelamin) {
+        alert("Isi semua form dengan baik dan benar");
+        return;
+    }
+
+    if (isNaN(beratbadan) || beratbadan <= 0) {
+        alert("Berat badan, usia, dan tinggi badan harus diisi, dan dengan nilai lebih besar dari 0.");
+        return;
+    }
+
+    if (isNaN(usia) || usia < 0) {
+        alert("Berat badan, usia, dan tinggi badan harus diisi, dan dengan nilai lebih besar dari 0.");
+        return;
+    }
     
-    //rumus BMI
+    if (isNaN(tinggibadan) || tinggibadan <= 0) {
+        alert("Berat badan, usia, dan tinggi badan harus diisi, dan dengan nilai lebih besar dari 0.");
+        return;
+    }
     var hasil = beratbadan / (tinggibadan**2);
     
     //membuat condition agar hasilnya muncul
@@ -22,4 +43,7 @@ function hasilperhitungan(){
             document.getElementById("hasilpenjelasan").innerHTML = "Anda obesitas";
         }
     }
+
+    var nilaiBMI = document.getElementById("hasilangka");
+    nilaiBMI.scrollIntoView({ behavior: "smooth" });  
 }
